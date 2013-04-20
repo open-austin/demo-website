@@ -1,0 +1,36 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+p {
+  margin-top: 3px;
+}
+
+.hero-unit {
+  padding-bottom: 5px;
+  margin-bottom: 0.5em;
+}
+
+.img-logo {
+  clear: both;
+  background: #ffffff;
+  float: right;
+  padding: 3px;
+  margin-left: 5px;
+  margin-top: 2px;
+  border-radius: 6px;
+}
+
+.tile {
+  background: #e8e8e8;
+  padding: 5px 10px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 8px;
+}
+
+.tile h2 {
+  border-bottom: dotted 1px #88a;
+  margin-bottom: 5px;
+}
+
