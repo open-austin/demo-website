@@ -1,1 +1,12 @@
-TODO
+This package contains the website for the ATX Civic Tech Expo
+sponsored by Open Austin.
+
+It is a static website, with document root at the "html" directory.
+
+The content is generated from "rhtml" templates, in the "src/pages"
+directory. To rebuild the content, simply run "rake".
+
+Chip Rosenthal
+<chip@unicom.com>
+Sun Apr 21 22:48:52 CDT 2013
+
