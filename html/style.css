@@ -34,3 +34,13 @@ p {
   margin-bottom: 5px;
 }
 
+.img-screenshot {
+  display: block;
+  width: 330px;
+  height: 248px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
