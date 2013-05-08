@@ -1,6 +1,17 @@
-h1, h2, h3, h4, h5, h6 {
-  margin: 0;
+.hero-unit h1, h1 {
+  color: #4690D7;
+  border-bottom: dotted 1px #4690D7;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
 }
+
+h2 {
+  color: #4690D7;
+  border-bottom: dotted 1px #4690D7;
+  padding-bottom: 2px;
+  margin-bottom: 10px;
+}
+
 
 p {
   margin-top: 3px;
@@ -12,13 +23,8 @@ p {
 }
 
 .img-logo {
-  clear: both;
-  background: #ffffff;
   float: right;
-  padding: 3px;
-  margin-left: 5px;
-  margin-top: 2px;
-  border-radius: 6px;
+  padding: 5px 0 5px 5px;
 }
 
 .tile {
@@ -29,9 +35,11 @@ p {
   border-radius: 8px;
 }
 
-.tile h2 {
-  border-bottom: dotted 1px #88a;
-  margin-bottom: 5px;
+.tile x-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .img-screenshot {
@@ -44,3 +52,12 @@ p {
   margin-right: auto;
 }
 
+.sponsor-logos {
+  text-align: center;
+}
+
+.sponsor-logos img {
+  height: 120px;
+  width: 120px;
+  padding: 5px;
+}
