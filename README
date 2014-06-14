@@ -1,12 +1,17 @@
-This package contains the website for the ATX Civic Tech Expo
-sponsored by Open Austin.
+This package contains the website for a table we provided
+at the Texas Digital Government Summit, June 2014.
 
 It is a static website, with document root at the "html" directory.
 
 The content is generated from "rhtml" templates, in the "src/pages"
 directory. To rebuild the content, simply run "rake".
 
+This branch is forked from the "city-hall-expo-2013" branch,
+in the atx-civic-tech-expo-web project.
+
+https://github.com/open-austin/atx-civic-tech-expo-website
+
 Chip Rosenthal
 <chip@unicom.com>
-Sun Apr 21 22:48:52 CDT 2013
+Sat Jun 14 11:39:46 CDT 2014
 
