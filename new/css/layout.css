@@ -1,0 +1,229 @@
+/*
+* Skeleton V1.2
+* Copyright 2011, Dave Gamache
+* www.getskeleton.com
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+* 6/20/2012
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700);
+
+/* Table of Content
+==================================================
+	#Site Styles
+	#Page Styles
+	#Media Queries
+	#Font-Face */
+
+/* Color Codes
+==================================================
+	# Orange = #B36E41 rgba(179, 110, 65, 0)
+	# Grey =   #2D2828 rgba(45, 40, 40, 0)
+
+/* #Site Styles
+================================================== */
+body {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+}
+
+section {
+	padding: 60px 0px 60px 0px;
+}
+
+section.map {
+	padding: 0px;
+	background-image: url("../img/map.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.section-header {}
+.section-header p {
+	font-size: 20pt;
+	margin-bottom: 30px;
+}
+
+.overlay.orange {
+	padding: 60px 0px 60px 0px;
+	width: 100%;
+	background-color: rgba(179, 110, 65, 0.92);
+}
+
+.grey {
+	padding: 60px 0px 60px 0px;
+	width: 100%;
+	background-color: #2D2828;
+}
+
+.overlay.orange,
+.overlay.orange h1,
+.overlay.orange h2,
+.overlay.orange h3,
+.overlay.orange h4,
+.overlay.orange h5,
+.overlay.orange h6,
+.grey,
+.grey h1,
+.grey h2,
+.grey h3,
+.grey h4,
+.grey h5,
+.grey h6 {
+	color: #FFFFFF;
+}
+
+button {
+	margin: 10px;
+	padding: 20px 30px;
+	background: #2D2828;
+	color: #FFFFFF;
+	border: none;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 17pt;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+button.light {
+	margin: 10px;
+	padding: 20px 30px;
+	background: #FFFFFF;
+	color: #2D2828;
+	border: none;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 300;
+	font-size: 17pt;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+button:hover {
+	background: #B36E41;
+	border: none;
+	color: #ffffff;
+}
+
+.center {
+	text-align: center;
+}
+.center * {
+	text-align: center;
+}
+
+p {
+	font-family: 'Nunito', sans-serif;
+	font-weight: 500;
+	font-size: 12pt;
+	text-align: justify;
+}
+
+.social img {
+	margin: 0px 40px;
+}
+
+/* #Page Styles
+================================================== */
+
+.header-copy {
+	font-size: 21pt;
+	text-align: justify;
+	line-height: 21pt;
+}
+
+.header-sign-up {
+	text-align: center;
+}
+.header-sign-up img {
+	width: 100%;
+}
+
+.app-gallery {}
+.app-gallery .item {
+	text-align: center;
+}
+.app-gallery .item>div {
+	margin: 20px;
+}
+.app-gallery .item img {
+	width: 90%;
+	margin: 0px 5% 20px;
+}
+
+
+/* #Hide all media query specific divs
+================================================== */
+
+._320,
+._480,
+._768,
+._960,
+._1366,
+.hidden {
+	display: none !important;
+}
+
+
+/* #Media Queries
+================================================== */
+
+	/* 1366 or higher (devices and browsers) */
+	@media only screen and (min-width: 1366px) {
+		._1366 {
+			display: block !important;
+		}
+	}
+
+	/* Smaller than standard 1366 (devices and browsers) */
+	@media only screen and (min-width: 960px) and (max-width: 1365px) {
+		._960 {
+			display: block !important;
+		}
+	}
+
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+		._768 {
+			display: block !important;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		._480 {
+			display: block !important;
+		}
+	}
+
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		._320 {
+			display: block !important;
+		}
+	}
+
+
+/* #Font-Face
+================================================== */
+/* 	This is the proper syntax for an @font-face file
+		Just create a "fonts" folder at the root,
+		copy your FontName into code below and remove
+		comment brackets */
+
+/*	@font-face {
+	    font-family: 'FontName';
+	    src: url('../fonts/FontName.eot');
+	    src: url('../fonts/FontName.eot?iefix') format('eot'),
+	         url('../fonts/FontName.woff') format('woff'),
+	         url('../fonts/FontName.ttf') format('truetype'),
+	         url('../fonts/FontName.svg#webfontZam02nTh') format('svg');
+	    font-weight: normal;
+	    font-style: normal; }
+*/
