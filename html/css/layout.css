@@ -133,7 +133,12 @@ p {
 }
 
 .social img {
-	margin: 0px 20px;
+	margin: 0px 10px;
+        padding: 6px;
+}
+
+.social a img:hover {
+	background: #B36E41;
 }
 
 /* #Page Styles
