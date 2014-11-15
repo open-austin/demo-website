@@ -120,6 +120,16 @@ a {
 	text-decoration: none;
 }
 
+a.strong {
+	color: #B36E41;
+	font-size: 16pt;
+        font-weight: 600;
+}
+
+a.strong:hover {
+        color: #8A5532;
+}
+
 p {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 500;
