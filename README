@@ -1,17 +1,8 @@
-This package contains the website for a table we provided
-at the Texas Digital Government Summit, June 2014.
+This website is the demo that we ran at ATX GIS Day, Nov 2014.
 
-It is a static website, with document root at the "html" directory.
+http://atxgisday.org/2014/
 
-The content is generated from "rhtml" templates, in the "src/pages"
-directory. To rebuild the content, simply run "rake".
+For this event we transitioned to a completely new, single page site.
 
-This branch is forked from the "city-hall-expo-2013" branch,
-in the atx-civic-tech-expo-web project.
-
-https://github.com/open-austin/atx-civic-tech-expo-website
-
-Chip Rosenthal
-<chip@unicom.com>
-Sat Jun 14 11:39:46 CDT 2014
+The new site was designed and implemented by Leah Roberts and Dennis Bartlett.
 
