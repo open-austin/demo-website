@@ -79,7 +79,7 @@ section.map {
 	color: #FFFFFF;
 }
 
-button, a.button-launch {
+a.button-launch {
 	/* margin: 20px 0; */
 	padding: 8px 20px;
 	background: #2D2828;
@@ -94,23 +94,28 @@ button, a.button-launch {
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 }
-button.light {
-	margin: 10px;
-	padding: 20px 30px;
-	background: #FFFFFF;
+
+a.button-launch:hover {
+	background: #B36E41;
+}
+
+a.button-light-launch {
+	padding: 8px 20px;
 	color: #2D2828;
-	border: none;
+        background: #ffffff;
+        font-weight: bold;
+        border: solid #2D2828 1px;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	font-size: 17pt;
+        text-decoration: none;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 }
-button:hover, a.button-launch:hover {
+
+a.button-light-launch:hover {
 	background: #B36E41;
-	/* border: none; */
-	/* color: #ffffff; */
 }
 
 .center {
