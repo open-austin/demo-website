@@ -79,15 +79,17 @@ section.map {
 	color: #FFFFFF;
 }
 
-button {
-	margin: 10px;
-	padding: 20px 30px;
+button, a.button-launch {
+	/* margin: 20px 0; */
+	padding: 8px 20px;
 	background: #2D2828;
-	color: #FFFFFF;
-	border: none;
+        color: #FFFFFF;
+        font-weight: bold;
+        border: solid #FFFFFF 1px;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	font-size: 17pt;
+        text-decoration: none;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
@@ -105,10 +107,10 @@ button.light {
 	-moz-border-radius: 20px;
 	border-radius: 20px;
 }
-button:hover {
+button:hover, a.button-launch:hover {
 	background: #B36E41;
-	border: none;
-	color: #ffffff;
+	/* border: none; */
+	/* color: #ffffff; */
 }
 
 .center {
@@ -122,11 +124,11 @@ p {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 500;
 	font-size: 12pt;
-	text-align: justify;
+	/* text-align: justify; */
 }
 
 .social img {
-	margin: 0px 40px;
+	margin: 0px 20px;
 }
 
 /* #Page Styles
@@ -134,8 +136,9 @@ p {
 
 .header-copy {
 	font-size: 21pt;
-	text-align: justify;
+	/*text-align: justify;*/
 	line-height: 21pt;
+        padding: 0 20px;
 }
 
 .header-sign-up {
@@ -148,6 +151,9 @@ p {
 .app-gallery {}
 .app-gallery .item {
 	text-align: center;
+}
+.app-gallery .item p {
+	text-align: left;
 }
 .app-gallery .item>div {
 	margin: 20px;

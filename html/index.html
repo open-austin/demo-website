@@ -10,6 +10,7 @@
         <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
 -->
+
     </head>
     <body>
         <section>
@@ -27,9 +28,11 @@
                 <div class="eight columns omega">
                     <div class="header-sign-up">
                         <img src="img/openaustin_logo_3852x740_trans.png" class="_768 _960 _1366">
+                        <br />
                         <h3>Interested in joining us?</h3>
                         Leave your feedback, join our email list, do awesome stuff!<br>
-                        <button>Sign up here</button>
+                        <br />
+                        <a class="button-launch" onclick="return launch_popup(this)" href="https://docs.google.com/forms/d/1guDFSEWZEuJam4Gwg9TmcU092Urj2h4QTE9ID21rSYc/viewform">Sign up here</a>
                     </div>
                 </div>
             </div>
@@ -64,23 +67,39 @@
                     <div class="one-third column omega item">
                         <div>
                             <img src="http://placekitten.com/320/248">
-                            <h3 class="center">10 to 1</h3>
+                            <h3 class="center">311 vs 10-ONE</h3>
                             <p>Donec nisi risus, interdum quis rutrum vitae, maximus ac nisl. Sed pellentesque ligula ut massa vestibulum, sed blandit orci sodales.</p>
                             <p>In rhoncus vestibulum nibh, id placerat lectus aliquet nec. Mauris auctor augue nec nunc varius, interdum efficitur sem semper.</p>
                         </div>
                     </div>
                 </div>
+
+                <br />
                 <div class="container app-gallery">
                     <div class="one-third column alpha item">
-                        <button>Lanuch App</button>
+                        <a class="button-launch" href="http://voteatx.us" target="_blank">Launch App</a>
                     </div>
                     <div class="one-third column item">
-                        <button>Lanuch App</button>
+                        <a class="button-launch" href="http://metrorappid.com/" target="_blank">Launch App</a>
                     </div>
                     <div class="one-third column omega item">
-                        <button>Lanuch App</button>
+                        <a class="button-launch" href="http://mateoclarke.github.io/311vs10One/" target="_blank">Launch App</a>
                     </div>
                 </div>
+
+                <br />
+                <div class="container app-gallery">
+                    <div class="one-third column alpha item">
+                        <a href="https://github.com/open-austin/voteatx-app" target="_blank">visit source repo</a></p>
+                    </div>
+                    <div class="one-third column item">
+                        <a href="https://github.com/luqmaan/MetroRappid" target="_blank">visit source repo</a></p>
+                    </div>
+                    <div class="one-third column omega item">
+                        <a href="https://github.com/mateoclarke/311vs10One" target="_blank">visit source repo</a></p>
+                    </div>
+                </div>
+
             </div>
         </section>
         <section>
@@ -92,10 +111,12 @@
             <div class="container">
                 <div class="eight columns alpha">
                     <h3>Hack</h3>
+                    <p>We build apps.</p>
                     <p>We're an active group of civic-minded hackers and creatives who build apps that solve civic problems. We also help local government leverage open source technology and encourage city government to open datasets for public access. We're the Code for America Brigade for Austin.</p>
                 </div>
                 <div class="eight columns omega">
                     <h3>Gov</h3>
+                    <p>We advocate policy.</p>
                     <p>Open Austin focuses on ensuring that all local public sector agencies embrace open data and open government principles, provide adequate oversight over public information, and support civic software developers.</p>
                 </div>
             </div>
@@ -105,22 +126,44 @@
                 <div class="six columns offset-by-five center">
                     <h3>Think you might be interested now?</h3>
                     <p>Leave your feedback, join our email list, <br>
-                    lets do awesome stuff together!</p>
-                    <button class="light">Join us Today!</button>
+                    let's do awesome stuff together!</p>
+                    <a class="button-launch" onclick="return launch_popup(this)" href="https://docs.google.com/forms/d/1guDFSEWZEuJam4Gwg9TmcU092Urj2h4QTE9ID21rSYc/viewform">Join us Today!</a>
                 </div>
             </div>
         </section>
         <section>
             <div class="container">
-                <div class="six columns offset-by-five center">
-                    <h3>We’re Social, Are you?</h3>
+                <div class="eight columns offset-by-four center">
+                    <h3>We're Social, Are you?</h3>
                     <p>Connect with us!</p>
                     <div class="social">
-                        <img src="img/git_icon_lg.png"><img src="img/facebook-square_75.png"><img src="img/twitter-square_75.png">
+                        <img src="img/git_icon_lg.png" />
+                        <img src="img/facebook-square_75.png" />
+                        <img src="img/twitter-square_75.png" />
                     </div>
                 </div>
             </div>
         </section>
 
-
-<span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; opacity: 0.9; cursor: pointer; top: 829px; left: 1633.5px; background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png); background-size: 100px 25px;"></span></body></html>
+<span id="buffer-extension-hover-button" style="display: none; position: absolute; z-index: 8675309; width: 100px; height: 25px; opacity: 0.9; cursor: pointer; top: 829px; left: 1633.5px; background-image: url(chrome-extension://noojglkidnpfjbincgijbaiedldjfbhh/data/shared/img/buffer-hover-icon@1x.png); background-size: 100px 25px;"></span>
+</body>
+<footer>
+    <script src="js/jquery-2.1.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var POPUP_MAX_WIDTH = 600;
+        var POPUP_MAX_HEIGHT = 600;
+        function launch_popup(self) {
+            var w = $(window).width();
+            if (w > POPUP_MAX_WIDTH) {
+                w = POPUP_MAX_WIDTH;
+            }
+            var h = $(window).height();
+            if (h > POPUP_MAX_HEIGHT) {
+                h = POPUP_MAX_HEIGHT;
+            }
+            window.open(self.href, "popup", "width="+w+",height="+h);
+            return false;
+        }
+    </script>
+</footer>
+</html>
