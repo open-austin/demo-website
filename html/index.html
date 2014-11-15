@@ -22,7 +22,7 @@
                 </div>
                 <div class="eight columns alpha">
                     <div class="header-copy">
-                        <p><strong>Open Austin</strong> is a local citizen volunteer group that advocates for open government, open data, and civic technology. We were founded in 2009 to advocate citizen interests in the City of Austin website and online presence. We are affiliated with <strong>Code for America</strong>, a national non-profit that uses technology to help governments work better, as the <strong>Code for America Brigade</strong> in Austin.</p>
+                        <p><a href="http://www.open-austin.org/"><strong>Open Austin</strong></a> is a local citizen volunteer group that advocates for open government, open data, and civic technology. We were founded in 2009 to advocate citizen interests in the City of Austin website and online presence. We are affiliated with <a href="http://www.codeforamerica.org/"><strong>Code for America</strong></a>, a national non-profit that uses technology to help governments work better, as the <strong>Code for America Brigade</strong> in Austin.</p>
                     </div>
                 </div>
                 <div class="eight columns omega">
@@ -127,7 +127,7 @@
                     <p>Leave your feedback, join our email list, <br>
                     let's do awesome stuff together!</p>
                     <br />
-                    <a class="button-light-launch" onclick="return launch_popup(this)" href="https://docs.google.com/forms/d/1guDFSEWZEuJam4Gwg9TmcU092Urj2h4QTE9ID21rSYc/viewform">Join us Today!</a>
+                    <a class="button-launch light" onclick="return launch_popup(this)" href="https://docs.google.com/forms/d/1guDFSEWZEuJam4Gwg9TmcU092Urj2h4QTE9ID21rSYc/viewform">Join us Today!</a>
                 </div>
             </div>
         </section>
@@ -137,9 +137,9 @@
                     <h3>We're Social, Are you?</h3>
                     <p>Connect with us!</p>
                     <div class="social">
-                        <a href="https://twitter.com/OpenAustin" target="_blank"><img src="img/twitter-square_75.png" /></a>
-                        <a href="https://www.facebook.com/pages/Open-Austin/412390968837071" target="_blank"><img src="img/facebook-square_75.png" /></a>
-                        <a href="https://github.com/open-austin" target="_blank"><img src="img/git_icon_lg.png" /></a>
+                        <a href="https://twitter.com/OpenAustin" target="_blank"><img src="img/icons/twitter-square_75.png" /></a>
+                        <a href="https://www.facebook.com/pages/Open-Austin/412390968837071" target="_blank"><img src="img/icons/facebook-square_75.png" /></a>
+                        <a href="https://github.com/open-austin" target="_blank"><img src="img/icons/git_icon_75.png" /></a>
                     </div>
                 </div>
             </div>
@@ -164,6 +164,16 @@
             window.open(self.href, "popup", "width="+w+",height="+h);
             return false;
         }
+        $('.social a img').hover(
+            function(){
+                file = $(this)[0].src.substring($(this)[0].src.lastIndexOf('/')+ 1);
+                $(this).attr('src','img/icons/hover/'+file);
+            },
+            function(){
+                file = $(this)[0].src.substring($(this)[0].src.lastIndexOf('/')+ 1);
+                $(this).attr('src','img/icons/'+file);
+            }
+        )
     </script>
 </footer>
 </html>

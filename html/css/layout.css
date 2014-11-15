@@ -83,13 +83,12 @@ a.button-launch {
 	/* margin: 20px 0; */
 	padding: 8px 20px;
 	background: #2D2828;
-        color: #FFFFFF;
-        font-weight: bold;
-        border: solid #FFFFFF 1px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
 	font-family: 'Nunito', sans-serif;
 	font-weight: 300;
 	font-size: 17pt;
-        text-decoration: none;
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
@@ -97,25 +96,17 @@ a.button-launch {
 
 a.button-launch:hover {
 	background: #B36E41;
+	border: 1pt solid white;
 }
 
-a.button-light-launch {
-	padding: 8px 20px;
+a.button-launch.light {
 	color: #2D2828;
-        background: #ffffff;
-        font-weight: bold;
-        border: solid #2D2828 1px;
-	font-family: 'Nunito', sans-serif;
-	font-weight: 300;
-	font-size: 17pt;
-        text-decoration: none;
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-	border-radius: 20px;
+    background: #ffffff;
 }
 
-a.button-light-launch:hover {
+a.button-launch.light:hover {
 	background: #B36E41;
+	border: none;
 }
 
 .center {
@@ -125,6 +116,10 @@ a.button-light-launch:hover {
 	text-align: center;
 }
 
+a {
+	text-decoration: none;
+}
+
 p {
 	font-family: 'Nunito', sans-serif;
 	font-weight: 500;
@@ -132,23 +127,23 @@ p {
 	/* text-align: justify; */
 }
 
-.social img {
-	margin: 0px 10px;
-        padding: 6px;
+strong {
+	color: #B36E41;
+	font-size: 16pt;
 }
 
-.social a img:hover {
-	background: #B36E41;
+.social img {
+	margin: 6px 16px;
 }
 
 /* #Page Styles
 ================================================== */
 
-.header-copy {
-	font-size: 21pt;
+.header-copy {}
+.header-copy p {
+	font-size: 14pt;
 	/*text-align: justify;*/
-	line-height: 21pt;
-        padding: 0 20px;
+	line-height: 22pt;
 }
 
 .header-sign-up {
