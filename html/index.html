@@ -161,7 +161,7 @@
             if (h > POPUP_MAX_HEIGHT) {
                 h = POPUP_MAX_HEIGHT;
             }
-            window.open(self.href, "popup", "width="+w+",height="+h);
+            window.open(self.href, "popup", "width="+w+",height="+h+",menubar=no,toolbar=no,scrollbars=yes");
             return false;
         }
         $('.social a img').hover(
